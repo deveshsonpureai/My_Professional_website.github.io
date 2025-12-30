@@ -1,0 +1,68 @@
+{
+    "name": "Devesh Sonpure",
+    "headline": "Consulting & Transformation Leader | Risk, Regulatory & Data Transformation | AI-Enabled Operating Models",
+    "about": "I am a consulting and transformation leader with 19+ years of experience delivering large-scale change programs for global banking and enterprise clients. My work spans risk and regulatory transformation, enterprise governance, data-led reporting modernization, and automation-driven productivity programs.\n\nI work at the intersection of business, risk, data, and technology — helping organizations translate regulatory and operational complexity into practical roadmaps, aligned stakeholders, and measurable outcomes. I am most effective in roles that require stakeholder leadership, ambiguity management, and end-to-end ownership of outcomes.\n\nIn recent years, I have also applied Generative AI and automation as practical enablers for productivity, decision support, and process improvement, grounded in real business problems rather than experimentation for its own sake.",
+  
+    "experience": [
+      {
+        "role": "Consulting & Transformation Manager",
+        "organization": "Virtusa (Client: Citi Group)",
+        "duration": "Apr 2016 – Present",
+        "location": "Tampa, USA | Pune, India",
+        "summary": "Lead large-scale transformation initiatives across enterprise risk, regulatory reporting, technology governance, and automation for a global banking client. Partner directly with senior stakeholders across Risk, Compliance, Operations, and Technology to move from fragmented manual processes to structured, scalable operating models.\n\nKey engagements include Enterprise Risk Metrics & Governance transformation, Technology Risk and Application Portfolio governance, multi-country Retail Basel regulatory re-engineering, global risk program leadership, and establishment of a multi-country RPA program delivering measurable efficiency gains."
+      },
+      {
+        "role": "Assistant Project Manager",
+        "organization": "NTT DATA",
+        "duration": "Jan 2011 – Apr 2015",
+        "location": "Hyderabad, India",
+        "summary": "Led Business Analysis and QA teams supporting ERP, HCM, and CRM platforms for large enterprise clients. Worked closely with stakeholders to identify operational inefficiencies and supported Lean transformation initiatives delivering 15–20% efficiency improvements."
+      },
+      {
+        "role": "Business Analyst / Quality Analyst",
+        "organization": "ShipNet Software Solutions",
+        "duration": "Mar 2009 – Jan 2011",
+        "location": "Chennai, India",
+        "summary": "Supported development and enhancement of an ERP platform in the logistics domain. Led requirements analysis, UAT coordination, and production go-live support, working closely with end users and engineering teams."
+      },
+      {
+        "role": "Software Engineer",
+        "organization": "Accenture",
+        "duration": "Oct 2006 – Feb 2009",
+        "location": "Chennai, India",
+        "summary": "Supported enterprise banking applications across development, testing, and automation. Built early exposure to large-scale delivery, client-facing work, and structured engineering practices."
+      }
+    ],
+  
+    "portfolio": [
+      {
+        "title": "AI-Powered Professional Chatbot",
+        "description": "Designed and deployed a GenAI-powered professional chatbot covering problem definition, model integration, prompt design, and deployment. Built as a practical demonstration of how AI can be used for contextual information access and productivity enablement.",
+        "link": "https://my-professional-chatbot-new-fastapi-html.onrender.com"
+      }
+    ],
+  
+    "articles": [
+      {
+        "title": "Managing Technology Risk While Working with Vendors and Suppliers",
+        "link": "https://www.linkedin.com/pulse/managing-technology-risk-while-working-vendors-devesh-sonpure-dkyce"
+      },
+      {
+        "title": "RPA – Success factors, how to make the most of it!",
+        "link": "https://www.linkedin.com/pulse/rpa-success-factors-how-make-most-devesh-sonpure"
+      },
+      {
+        "title": "Robotic Process Automation – Decoded",
+        "link": "https://www.linkedin.com/pulse/robotic-process-automation-decoded-devesh-sonpure"
+      },
+      {
+        "title": "Is this the beginning of a new era in Health Care domain?",
+        "link": "https://www.linkedin.com/pulse/beginning-new-era-health-care-domain-devesh-sonpure"
+      }
+
+    ],
+  
+    "contact": "Connect with me on <a href=\"https://www.linkedin.com/in/deveshsonpure\" target=\"_blank\">LinkedIn</a> or explore my work on <a href=\"https://github.com/yourusername\" target=\"_blank\">GitHub</a>.",
+    "email": "deveshsonpure@gmail.com"
+  }
+  

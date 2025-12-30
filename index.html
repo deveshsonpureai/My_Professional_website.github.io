@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devesh Sonpure | Consulting & Transformation Leader</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #f8fafc;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 32px;
+    }
+
+    header {
+      grid-column: 1 / -1;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      color: #c7d2fe;
+      font-size: 1.1rem;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #a5b4fc;
+    }
+
+    .card {
+      border-left: 4px solid #38bdf8;
+      padding-left: 16px;
+      margin-bottom: 20px;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: #e0e7ff;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Chat Section */
+    .chat-container {
+      position: sticky;
+      top: 24px;
+      height: calc(100vh - 48px);
+      display: flex;
+      flex-direction: column;
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .chat-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+    }
+
+    .bot-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: radial-gradient(circle at top left, #fff, #93c5fd);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+
+    .chat-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .chat-frame {
+      flex: 1;
+      border: none;
+      width: 100%;
+    }
+
+    footer {
+      grid-column: 1 / -1;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #c7d2fe;
+      margin-top: 24px;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: white;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .chat-container.collapsed {
+      height: 72px;
+    }
+
+    .chat-container.collapsed iframe {
+      display: none;
+    }
+
+    .chat-header { cursor: pointer; }
+
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .chat-container {
+        position: relative;
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1 id="name"></h1>
+    <p class="subtitle" id="headline"></p>
+    <a href="me/Devesh_Sonpure_Resume.pdf" download class="resume-btn">⬇ Download Resume</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p id="about"></p>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div id="experience"></div>
+    </section>
+
+    <section>
+      <h2>AI & Digital Portfolio</h2>
+      <div id="portfolio"></div>
+    </section>
+
+    <section>
+      <h2>Writing & Thought Leadership</h2>
+      <ul id="articles"></ul>
+    </section>
+  </main>
+
+  <aside class="chat-container collapsed" id="chatBox">
+    <div class="chat-header" id="chatToggle">
+      <div class="bot-avatar">🤖</div>
+      <div class="chat-title">Chat with Devesh's AI Avatar</div>
+    </div>
+    <iframe
+      class="chat-frame"
+      src="https://my-professional-chatbot-new-fastapi-html.onrender.com"
+      title="AI Assistant Chat">
+    </iframe>
+  </aside>
+
+  <footer>
+    <p id="contact"></p>
+    <p id="email"></p>
+  </footer>
+
+</div>
+
+<script>
+fetch('content.json')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('name').innerText = data.name;
+    document.getElementById('headline').innerText = data.headline;
+    document.getElementById('about').innerText = data.about;
+    document.getElementById('contact').innerHTML = data.contact;
+    document.getElementById('email').innerHTML =
+    `Email: <a href="mailto:${data.email}">${data.email}</a>`;
+
+    const expDiv = document.getElementById('experience');
+    data.experience.forEach(e => {
+      expDiv.innerHTML += `
+        <div class="card">
+          <strong>${e.role}</strong> — ${e.organization}<br/>
+          <span class="meta">${e.duration} | ${e.location}</span>
+          <p>${e.summary}</p>
+        </div>`;
+    });
+
+    const portDiv = document.getElementById('portfolio');
+    data.portfolio.forEach(p => {
+      portDiv.innerHTML += `
+        <div class="card">
+          <strong>${p.title}</strong>
+          <p>${p.description}</p>
+          <a href="${p.link}" target="_blank">View Demo</a>
+        </div>`;
+    });
+
+    const artUl = document.getElementById('articles');
+    data.articles.forEach(a => {
+      artUl.innerHTML += `<li><a href="${a.link}" target="_blank">${a.title}</a></li>`;
+    });
+  });
+
+const chatBox = document.getElementById('chatBox');
+const chatToggle = document.getElementById('chatToggle');
+
+chatToggle.addEventListener('click', () => {
+  chatBox.classList.toggle('collapsed');
+});
+</script>
+
+</body>
+</html>
