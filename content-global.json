@@ -1,0 +1,69 @@
+{
+    "name": "Devesh Sonpure",
+    "headline": "Consulting & Transformation Leader | Risk, Regulatory & Digit Transformation",
+    "about": "I am a consulting and transformation leader with close to two decades of experience supporting global banks and enterprise clients through complex change initiatives. My work has primarily focused on risk and regulatory transformation, enterprise governance, data-led reporting modernisation, and productivity improvement through automation.\nOver the years, I have worked closely with senior stakeholders across risk, compliance, operations, and technology to help organisations move from fragmented, manual processes to more structured and scalable operating models. Much of my experience sits at the intersection of regulatory expectations, business reality, and delivery constraints.\nI am particularly drawn to transformation work where clarity, prioritisation, and disciplined execution matter more than theoretical frameworks.",
+    
+    "what_i_do": [
+                  {
+                    "title": "Risk & Regulatory Transformation",
+                    "description": "Supporting financial institutions in addressing regulatory expectations through practical improvements to processes, controls, data, and governance."
+                  },
+                  {
+                    "title": "Technology & Application Risk Management",
+                    "description": "Helping organisations manage application portfolios, third-party risk, cloud adoption, and technology control remediation within enterprise risk frameworks."
+                  },
+                  {
+                    "title": "Operating Model & Process Re-engineering",
+                    "description": "Breaking down complex, fragmented processes and reshaping them into scalable, sustainable operating models."
+                  },
+                  {
+                    "title": "Automation & Productivity Transformation",
+                    "description": "Designing and delivering RPA-led programs that improve efficiency while ensuring control, transparency, and adoption."
+                  },
+                  {
+                    "title": "Program & Portfolio Leadership",
+                    "description": "Leading large, multi-country, multi-vendor consulting engagements with strong governance and predictable outcomes."
+                  }
+                ],
+
+"experience": [
+  "Enterprise risk metrics and governance transformation driven by regulatory and consent order requirements",
+  "Retail Basel and regulatory reporting re-engineering across multiple geographies",
+  "Application and technology risk governance for in-house and SaaS platforms",
+  "Global RPA programs delivering measurable productivity and efficiency gains",
+  "Large consulting engagements involving multi-country, multi-vendor delivery models"
+],
+
+  
+    "portfolio": [
+      {
+        "title": "AI-Powered Professional Chatbot",
+        "description": "Designed and deployed a Generative AI–based professional chatbot as a hands-on learning initiative to better understand integration, usability, and deployment considerations. Built as a practical demonstration of AI-enabled productivity support in a professional context.",
+        "link": "https://my-professional-chatbot-new-fastapi-html.onrender.com"
+      }
+    ],
+  
+    "articles": [
+      {
+        "title": "Managing Technology Risk While Working with Vendors and Suppliers",
+        "link": "https://www.linkedin.com/pulse/managing-technology-risk-while-working-vendors-devesh-sonpure-dkyce"
+      },
+      {
+        "title": "RPA – Success factors, how to make the most of it!",
+        "link": "https://www.linkedin.com/pulse/rpa-success-factors-how-make-most-devesh-sonpure"
+      },
+      {
+        "title": "Robotic Process Automation – Decoded",
+        "link": "https://www.linkedin.com/pulse/robotic-process-automation-decoded-devesh-sonpure"
+      },
+      {
+        "title": "Is this the beginning of a new era in Health Care domain?",
+        "link": "https://www.linkedin.com/pulse/beginning-new-era-health-care-domain-devesh-sonpure"
+      }
+
+    ],
+  
+    "contact": "Connect with me on <a href=\"https://www.linkedin.com/in/deveshsonpure\" target=\"_blank\">LinkedIn</a> or explore my work on <a href=\"https://github.com/deveshsonpureai\" target=\"_blank\">GitHub</a>.",
+    "email": "deveshsonpure@gmail.com"
+  }
+  

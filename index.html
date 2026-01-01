@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devesh Sonpure | Consulting & Transformation Leader</title>
+  <title>Devesh Sonpure | Transformation Manager</title>
   <style>
     body {
       margin: 0;
@@ -171,6 +171,11 @@
     </section>
 
     <section>
+      <h2>What I Help Organizations With</h2>
+      <div id="what_i_do"></div>
+    </section>
+
+    <section>
       <h2>Professional Experience</h2>
       <div id="experience"></div>
     </section>
@@ -181,7 +186,12 @@
     </section>
 
     <section>
-      <h2>Writing & Thought Leadership</h2>
+      <h2>Writing & Perspectives</h2>
+      <p>
+        I occasionally write about banking transformation, technology risk, automation,
+        and regulatory change, drawing from real-world delivery experience.
+        Selected topics include:
+      </p>
       <ul id="articles"></ul>
     </section>
   </main>
@@ -206,25 +216,45 @@
 </div>
 
 <script>
-fetch('content.json')
+const params = new URLSearchParams(window.location.search);
+const market = params.get('market') || 'global';
+
+const contentFile =
+  market.toLowerCase() === 'india'
+    ? 'content-india.json'
+    : 'content-global.json';
+
+fetch(contentFile)
   .then(res => res.json())
   .then(data => {
-    document.getElementById('name').innerText = data.name;
+    document.getElementById('about').innerHTML = data.about.replace(/\n/g, "<br><br>");
     document.getElementById('headline').innerText = data.headline;
-    document.getElementById('about').innerText = data.about;
+    document.getElementById('name').innerText = data.name;
+
+    const whatDiv = document.getElementById("what_i_do");
+    whatDiv.innerHTML = "";
+
+    data.what_i_do.forEach(item => {
+      whatDiv.innerHTML += `
+        <div class="card">
+          <strong>${item.title}</strong>
+          <p>${item.description}</p>
+        </div>
+      `;
+    });
+
+
     document.getElementById('contact').innerHTML = data.contact;
     document.getElementById('email').innerHTML =
     `Email: <a href="mailto:${data.email}">${data.email}</a>`;
 
-    const expDiv = document.getElementById('experience');
-    data.experience.forEach(e => {
-      expDiv.innerHTML += `
-        <div class="card">
-          <strong>${e.role}</strong> — ${e.organization}<br/>
-          <span class="meta">${e.duration} | ${e.location}</span>
-          <p>${e.summary}</p>
-        </div>`;
-    });
+  const expDiv = document.getElementById("experience");
+  expDiv.innerHTML = "<ul></ul>";
+
+  data.experience.forEach(item => {
+    expDiv.querySelector("ul").innerHTML += `<li>${item}</li>`;
+  });
+
 
     const portDiv = document.getElementById('portfolio');
     data.portfolio.forEach(p => {

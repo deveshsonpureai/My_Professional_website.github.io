@@ -1,0 +1,54 @@
+{
+    "name": "Devesh Sonpure",
+    "headline": "Consulting & Transformation Leader | Banking, Risk & Regulatory Transformation",
+    "about": "I am a consulting and transformation leader with 19+ years of experience delivering large-scale banking and regulatory change programs across India and global markets. My work has focused on risk and regulatory transformation, enterprise governance, data-led reporting modernization, and automation-driven productivity improvement.\nI have led multi-country delivery teams, worked closely with senior stakeholders across risk, compliance, operations, and technology, and helped organizations move from fragmented, manual processes to structured and scalable operating models. My strength lies in breaking down complex regulatory or operational problems and driving execution through disciplined delivery.",
+    "what_i_do": [
+      {
+        "title": "Risk & Regulatory Transformation",
+        "description": "Supporting banks and financial institutions in meeting regulatory expectations through practical process, data, and governance improvements."
+      },
+      {
+        "title": "Technology & Application Risk Management",
+        "description": "Managing application portfolios, third-party risk, cloud adoption, and remediation within enterprise technology risk frameworks."
+      },
+      {
+        "title": "Operating Model & Process Re-engineering",
+        "description": "Redesigning fragmented processes into scalable, cost-effective operating models suitable for large delivery organizations."
+      },
+      {
+        "title": "Automation & Productivity Transformation",
+        "description": "Delivering RPA-led automation programs to improve efficiency, reduce operational risk, and achieve measurable productivity gains."
+      },
+      {
+        "title": "Program & Portfolio Leadership",
+        "description": "Leading large, multi-vendor, multi-location consulting programs with strong governance and predictable outcomes."
+      }
+    ],
+    "experience": [
+      "Led large-scale risk and regulatory transformation programs for global banks",
+      "Delivered Retail Basel and regulatory reporting re-engineering across multiple geographies",
+      "Managed application and technology risk governance for complex enterprise portfolios",
+      "Established and scaled global RPA programs delivering measurable productivity gains",
+      "Led multi-country consulting engagements with strong delivery and financial governance"
+    ],
+    "portfolio": [
+      {
+        "title": "AI-Enabled Professional Chatbot",
+        "description": "Built a Generative AI–based professional chatbot as a hands-on initiative to explore AI-enabled knowledge access and productivity support in a consulting context.",
+        "link": "https://my-professional-chatbot-new-fastapi-html.onrender.com"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Managing Technology Risk While Working with Vendors and Suppliers",
+        "link": "https://www.linkedin.com/pulse/managing-technology-risk-while-working-vendors-devesh-sonpure-dkyce"
+      },
+      {
+        "title": "RPA – Success factors, how to make the most of it!",
+        "link": "https://www.linkedin.com/pulse/rpa-success-factors-how-make-most-devesh-sonpure"
+      }
+    ],
+    "contact": "Connect with me on <a href=\"https://www.linkedin.com/in/deveshsonpure\" target=\"_blank\">LinkedIn</a> or explore my work on <a href=\"https://github.com/deveshsonpureai\" target=\"_blank\">GitHub</a>.",
+    "email": "deveshsonpure@gmail.com"
+}
+  
